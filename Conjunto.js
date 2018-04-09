@@ -126,11 +126,40 @@ class Conjunto {
 	// .................................................
 	eliminar( elemento ) {
 
-		this.losElementos.splice( this.donde(elemento) , 1 )	;
+		this.losElementos.splice( this.donde(elemento), 1 )	;
 
 		}
 
 	} // eliminar()
+
+	// .................................................
+	// 
+	// Conjunto
+	//  -->
+	// unir()
+	//  -->
+	//    Conjunto
+	// _________________________________________________
+	// Elimina un elemento del conjunto.
+	// .................................................
+	unir( conjunto ) {
+
+		var c1 = new Conjunto
+
+		this.anyadir(conjunto.losElementos);
+
+		console.log(c1.losElementos.aTexto())
+
+		}
+
+	} // unir()
+
+	aTexto(){
+
+		console.log(this.losElementos.forEach()) ;
+	}
+
+
 
 } // class
 
