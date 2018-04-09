@@ -17,6 +17,20 @@ class Conjunto {
 
 	// .................................................
 	// 
+	// vaciar()
+	//
+	// _________________________________________________
+	// Función que elimina todos los elementos de un 
+	// conjunto, cambiando su tamaño a 0 casillas.
+	// .................................................
+	vaciar( ) {
+
+		this.losElementos.length() = 0 ;
+
+	} // vaciar()
+
+	// .................................................
+	// 
 	// f()
 	// -->
 	//    Entero 
