@@ -44,6 +44,32 @@ class Conjunto {
 
 	} // talla()
 
+	// .................................................
+	// 
+	// Real
+	//  -->
+	// donde()
+	// -->
+	//    Entero 
+	// _________________________________________________
+	// Devuelve el número de la casilla del array donde
+	// se encuentra el elemento solicitado.
+	// .................................................
+	donde( elemento ) {
+
+		var res;
+
+		for(let i = 0 ; i<= this.losElementos.length - 1 ; i++){
+			
+			if( this.losElementos[i] == elemento){
+				res = i;
+			}
+		}
+
+		return res;
+
+	} // donde()
+
 } // class
 
 // -----------------------------------------------------
