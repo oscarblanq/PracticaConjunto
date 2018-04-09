@@ -20,25 +20,29 @@ class Conjunto {
 	// vaciar()
 	//
 	// _________________________________________________
-	// Función que elimina todos los elementos de un 
+	// Elimina todos los elementos de un 
 	// conjunto, cambiando su tamaño a 0 casillas.
 	// .................................................
 	vaciar( ) {
 
-		this.losElementos.length() = 0 ;
+		this.losElementos.length = 0 ;
 
 	} // vaciar()
 
 	// .................................................
 	// 
-	// f()
+	// talla()
 	// -->
 	//    Entero 
+	// _________________________________________________
+	// Devuelve el número de elementos que contiene el
+	// conjunto.
 	// .................................................
 	talla( ) {
-		console.error( " Atencion: falta implementar talla()" )
-		return 13
-	} // ()
+
+		return this.losElementos.length	;
+
+	} // talla()
 
 } // class
 
