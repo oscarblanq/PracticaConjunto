@@ -59,16 +59,43 @@ class Conjunto {
 
 		var res;
 
-		for(let i = 0 ; i<= this.losElementos.length - 1 ; i++){
+		for( let i = 0 ; i<= this.losElementos.length - 1 ; i++ ){
 			
-			if( this.losElementos[i] == elemento){
+			if ( this.losElementos[ i ] ==  null){
+
 				res = i;
+
+			}	else{
+
+				res = null ;
+
 			}
 		}
 
 		return res;
 
 	} // donde()
+
+	// .................................................
+	// 
+	// Real
+	//  -->
+	// contiene()
+	// -->
+	//    [T/F]
+	// _________________________________________________
+	// Devuelve V/F si el elemento solicitado se
+	// encuentra dentro del conjunto.
+	// .................................................
+	contiene( elemento ) {
+
+		if( this.losElementos [ donde( elemento ) ] != null ){
+
+			return true	;
+
+		}
+
+	} // contiene()
 
 } // class
 
