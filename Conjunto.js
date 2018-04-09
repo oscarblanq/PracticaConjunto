@@ -110,11 +110,27 @@ class Conjunto {
 
 		if( this.losElementos [ this.contiene( elemento ) ] == false ){
 
-			this.losElementos.push( elemento )
+			this.losElementos.push( elemento ) ;
 
 		}
 
 	} // anyadir()
+
+	// .................................................
+	// 
+	// Real
+	//  -->
+	// eliminar()
+	// _________________________________________________
+	// Elimina un elemento del conjunto.
+	// .................................................
+	eliminar( elemento ) {
+
+		this.losElementos.splice( this.donde(elemento) , 1 )	;
+
+		}
+
+	} // eliminar()
 
 } // class
 
