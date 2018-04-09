@@ -89,13 +89,32 @@ class Conjunto {
 	// .................................................
 	contiene( elemento ) {
 
-		if( this.losElementos [ donde( elemento ) ] != null ){
+		if( this.losElementos [ this.donde( elemento ) ] != null ){
 
 			return true	;
 
 		}
 
 	} // contiene()
+
+	// .................................................
+	// 
+	// Real
+	//  -->
+	// anyadir()
+	// _________________________________________________
+	// Añade un elemento nuevo al conjunto si este no 
+	// se encuentra ya en él.
+	// .................................................
+	anyadir( elemento ) {
+
+		if( this.losElementos [ this.contiene( elemento ) ] == false ){
+
+			this.losElementos.push( elemento )
+
+		}
+
+	} // anyadir()
 
 } // class
 
